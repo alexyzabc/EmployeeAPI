@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EmployeeSystem.BL">
+      <HintPath>..\EMPLOYEE-INFORMATION\csproj\EmployeeSystem.BL.dll</HintPath>
+    </Reference>
+    <Reference Include="EmployeeSystem.DL">
+      <HintPath>..\EMPLOYEE-INFORMATION\csproj\EmployeeSystem.DL.dll</HintPath>
+    </Reference>
+    <Reference Include="EmployeeSystem.Models">
+      <HintPath>..\EMPLOYEE-INFORMATION\csproj\EmployeeSystem.Models.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
